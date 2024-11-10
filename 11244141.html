@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11244141</title>
+</head>
+<style>
+        * { /* *匹配所有元素*/
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0; /*消除默認的邊邊*/
+        font-family: Arial;
+        font-weight: bold; /*加粗*/
+        color:#363636 ;
+
+
+        }
+
+    nav{
+        display: flex; /*自動佈局*/
+        justify-content: space-around; /*項目左右對齊*/        
+        background-color: #c5c5c5;
+        padding:10px 1rem;
+        
+    }
+
+    nav div a,
+    footer a {
+        cursor: pointer;
+    }
+
+    nav div a:hover,
+    footer a:hover {
+        color: #9c9c9c;
+    }
+
+    .about{
+        display: flex;
+        background-color: #c5c5c5;
+        width: 80%;
+        height: 200px;
+        margin: 1rem auto; /*外空白 auto=左右都*/
+        border-radius: 15px; /*圓角*/
+    }
+
+    .about_photo img,
+    .experience img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 15px;
+
+    }
+
+    .about_photo{
+        margin: 1rem;
+        width: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center; /*垂直對齊*/
+        background-color: #9c9c9c;
+        border-radius: 15px;
+        text-align: center;
+    }
+
+    .about_text{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .skill{
+        display: flex;
+        width: 180px;
+        height: 180px;
+        margin: 1rem auto; /*外空白 auto=左右都*/
+        border-radius: 50%; /*圓角*/
+        overflow: hidden; 
+    }
+
+    .skill img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .skill_out{
+        display: flex;
+        justify-content: center;
+    }
+
+    .note{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #c5c5c5;
+        height:25px;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .experience{
+        display: flex;
+    }
+
+    .experience_photo_left{
+        display: flex;
+        justify-content: center;
+        align-items: center; /*垂直對齊*/
+        background-color: #c5c5c5;
+        width: 200px;
+        height: 200px;
+        margin: 10px 10px 10px 20px;
+        border-radius: 15px; /*圓角*/
+    }
+
+    .experience_text_right{
+        display: flex;
+        flex-grow: 1;
+        background-color: #c5c5c5;
+        height: 200px;
+        margin: 10px 20px 10px 10px;
+        border-radius: 15px; /*圓角*/
+    }
+
+    .experience_photo_right{
+        display: flex;
+        justify-content: center;
+        align-items: center; /*垂直對齊*/
+        background-color: #c5c5c5;
+        width: 200px;
+        height: 200px;
+        margin: 10px 20px 10px 10px;
+        border-radius: 15px; /*圓角*/
+    }
+
+    .experience_text_left{
+        display: flex;
+        flex-grow: 1;
+        background-color: #c5c5c5;
+        height: 200px;
+        margin: 10px 10px 10px 20px;
+        border-radius: 15px; /*圓角*/
+    }
+
+
+    .experience_text2{
+        padding: 20px;
+        font-size: 17.8px;
+        }
+
+    footer{
+        display: flex; /*自動佈局*/
+        justify-content: space-around; /*項目左右對齊*/        
+        background-color: #c5c5c5;
+        padding:10px 1rem;
+        margin-top: 15px;
+        text-decoration: underline;
+    }
+
+</style>
+
+<body>
+    <div id="top"></div>
+
+    <nav>
+        <div><a href="#about">ABOUT</a></div>
+        <div><a href="#skill">SKILL</a></div>
+        <div><a href="#exp">EXPERIENCE</a></div>
+    </nav>
+
+    <div id="about"></div>
+
+    <div class="note" style="width: 100px;">
+        ABOUT
+    </div>
+        
+    <div class="about">
+        <div class="about_photo">
+            <img src="about.png" alt="">
+         </div>
+        <div class="about_text">
+            <p>姓名: 陳嘉婕</p>
+            <p>信箱: jc11093241217@gmail.com</p>
+            <p>生日: 2004/12/17</p>
+            <p>興趣: 聽音樂 看小說</p>
+            <p>特質: 樂觀</p>
+        </div>
+    </div>
+
+    <div id="skill"></div>
+
+    <div class="note" style="width: 80px;">
+        SKILL
+    </div>
+
+    <div>
+        <div class="skill_out" style="padding: 0px 140px;">
+            <div class="skill"><img src="JAVA.jpg" alt=""></div>
+            <div class="skill"><img src="python.jpg" alt=""></div>
+            <div class="skill"><img src="ps.jpg" alt=""></div>
+        </div>
+
+        </div>
+
+        <div class="skill_out" style="padding: 0px 50px;">
+            <div class="skill"><img src="word.jpg" alt=""></div>
+            <div class="skill"><img src="ppt.jpg" alt=""></div>
+            <div class="skill"><img src="access.jpg" alt=""></div>
+            <div class="skill"><img src="excel.jpg" alt=""></div>
+
+        </div>
+    </div>
+    
+    <div id="exp"></div>
+
+    <div class="note" style="width: 150px;">
+        EXPERIENCE
+    </div>
+
+    <div>
+        <div class="experience">
+            <div class="experience_photo_left" style="width: 350px;">
+                <img src="exp_1.png" alt="">
+            </div>
+
+            <div class="experience_text_right">
+                <div class="experience_text2">
+                    在國小時，因為成長環境因素，我比同齡的人們更會操控電腦，也因為這點被歷屆的老師邀請<br>
+                    去參加校內電腦相關的小型競賽，最後也都獲得了不錯的成績，升上國中時我因為國小有豐富<br>
+                    的相關經驗，也是這三年學校比賽的常客，也完成了我人生中第二個畢業紀念冊的製作，老師<br>
+                    得知我對這方面較為精通之後，派我去參加了校外的簡報設計及程式設計等等競賽，也因為這<br>
+                    樣累積了不少新的經驗。
+                </div>
+            </div>
+        </div>
+
+        <div class="experience">
+            <div class="experience_text_left">
+                <div class="experience_text2">
+                    高三時的業師課我接觸到了EV3和Micro Bit兩款機器人，都是透過程式設計後控制組裝好的機器人車體動作，認識<br>
+                    到了怎麼設計聲音感測器和超音波感應器工作，讓機器人接受到訊息時做出對應的反饋，除了可以靠自己的想像力<br>
+                    設計各種不同情況之外，也很好得訓練了邏輯思維的能力，需要了解在什麼狀況下可以做哪些指令，這是個很需要<br>
+                    細心與耐心的環節，如果有任何一個微小的地方錯誤，可能都會導致整個系統無法運作。
+                </div>
+            </div>
+
+            <div class="experience_photo_right">
+                <img src="exp_02.png" alt="">
+            </div>
+        </div>
+
+        <div class="experience">
+            <div class="experience_photo_left">
+                <img src="exp_03.png" alt="">
+            </div>
+
+            <div class="experience_text_right">
+                <div class="experience_text2">
+                    大一時的管理學課程，我們藉由老師指定的主題跟小組一起參與了淨灘活動，其實一開始本來覺得是個蠻簡單的任務<br>
+                    直到真的到了現場後發現需要非常多的專注力和體力，沙灘上的路非常不平整，很多長青苔的石頭和流動的沙子，每<br>
+                    走一步都需要非常小心，結束過後我們也透過歷年來的數據研究了這樣的淨灘活動是否真的對減少海洋汙染有所幫助<br>
+                    是一個讓我印象很深刻同時也學到很多新的事物的經驗。
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<footer>
+    <a href="#top">BACK</a>
+</footer>
+</html>
